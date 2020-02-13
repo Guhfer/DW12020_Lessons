@@ -1,0 +1,16 @@
+h1 {
+    color: blue;
+    text-align: center;
+    border: 1px solid black;
+}
+table {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 30%;
+    height: 150px;
+    margin: 50px auto; /* Margin pode-se colocar antes suas margin bot e top */
+}
+td, th {
+    border: 1px solid black;
+}
