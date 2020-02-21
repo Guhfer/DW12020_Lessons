@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>WebMail</title>
+		<link rel="stylesheet" type="text/css" href="estilos.css" />
+	</head>
+	
+	<body>
+		<section>
+			<h2>WebMail</h2>
+			<form action="resposta.html" method="post"><!-- action = para onde vai enviar os dados do forms
+			 method = GET permite só envio de dados binários adicionando ao próprio cabeçalho na URL
+			 method = POST fica no corpo da requisição encapsulando com tipo do contentType-->
+				<label for="clogin">Login:</label> <!-- Pode usar o label como pai do input e não precisa de ID-->
+				<input id="clogin" type="text" name="login" placeholder="nome.sobrenome" maxlength="10" required="required" />
+				<label for="cpassword">Password:</label>
+				<input id="cpassword" type="password" name="password" maxlength="15" required>
+				<input type="submit" name="button" value="Sign In"/>
+				<input type="reset" name="button" value="Clear"/>
+			</form>
+		</section>
+	</body>
+
+</html>

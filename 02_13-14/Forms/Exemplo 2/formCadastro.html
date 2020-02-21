@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css" />
+</head>
+
+<body>
+<section>
+	<h2>Register form</h2>
+	<form action="resposta.html" method="post" enctype="multipart/form-data">
+		<label for="cname">Name:</label>
+		<input type="text" name="name" id="cname" required/>
+		<label for="cphoto">Send photo:</label>
+		<input type="file" name="photo" id="cphoto" accept="image/*" multiple="multiple"/> <!-- Usar o accept para extensões de
+			arquivos ou os tipos de arquivos que são necessários -->
+
+		<fieldset>
+			<legend>Marital status:</legend>
+			<label for="solteiro">Single</label>
+			<input id="solteiro" type="radio" name="civil" value="single" checked/>
+			<label for="casado">Marriage</label>
+			<input id="casado" type="radio" name="civil" value="marriage"/>
+			<label for="divorced">Divorced</label>
+			<input id="divorced" type="radio" name="civil" value="divorced"/>
+		</fieldset>
+
+		<fieldset>
+			<legend>Interests</legend>
+			<label for="policies">Polics</label>
+			<input id="policies" type="checkbox"/>
+			<label for="economy">Economy</label>
+			<input id="economy" type="checkbox"/>
+			<label for="sport">Sport</label>
+			<input id="sport" type="checkbox"/>
+		</fieldset>
+
+		<label for="uf">State:</label>
+		<select id="uf" name="state">
+			<optgroup label="Southeast">
+				<option value="SP">SP</option>
+				<option value="RJ">RJ</option>
+			</optgroup>
+			<optgroup label="Northeast">
+				<option value="BA">BA</option>
+			</optgroup>
+			<optgroup label="South">
+				<option value="RS" selected>RS</option>
+			</optgroup>
+		</select>
+		<label for="desc">Description:</label>
+		<textarea id="desc" name="desc" placeholder="Describe yourself here"></textarea>
+
+		<label for="children">How many children:</label>
+		<input id="children" type="number" name="fieldChildren" min="0" max="10" step="1"/>
+
+		<label for="fieldDate">Born date:</label>
+		<input id="fieldDate" name="date" type="datetime-local" step="1" min="1900-01-01T08:00:00" max="2020-01-01T23:00:00"/>
+
+		<label for="fieldLang">Language:</label>
+		<input id="fieldLang" type="text" name="language" list="languages" />
+		<datalist id="languages">
+			<option>English</option>
+			<option>Spanish</option>
+			<option>French</option>
+		</datalist>
+
+		<input type="submit" name="button" value="Send"/>
+	</form>
+</section>
+
+</body>
+
+</html>
