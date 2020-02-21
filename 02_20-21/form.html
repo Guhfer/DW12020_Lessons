@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Dados cadastrais</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <section>
+        <h2>Cadastro:</h2>
+    <form method="post" action="controlador" enctype="multipart/form-data">
+        <label for="fname">Nome:</label>
+        <input id="fname" type="text" name="name" pattern="[a-zA-Z]{2,}(\s[a-zA-Z]{2,})+" required/>
+
+        <label for="fphoto">Foto:</label>
+        <input id="fphoto" type="file" name="photo"  accept="image/*" required/>
+
+        <label for="frg">RG:</label>
+        <input id="frg" type="text" pattern="\d{2}(\.\d{3}){2}-\d"/>
+
+        <label for="fplate">Placa do veículo:</label>
+        <input id="fplate" type="text" pattern="[A-Z]{3}-\d{4}"/>
+
+        <label for="fpassword">Senha:</label>
+        <input id="fpassword" type="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=[^a-zA-Z0-9])(?!.*[aA|bB])(?!.*12).{8,}" >
+
+        <input type="submit" name="button" value="Enviar"/>
+    </form>
+    </section>
+
+
+</body>
+</html>

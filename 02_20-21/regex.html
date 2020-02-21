@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data" action="Enviar para onde">
+        <label for="name" >Nome:</label>
+        <!-- Regex que encontra uma letra independente da string sem consumi-lá look ahead-->
+        <input id="name" type="text" name="name" pattern="(?=.*a)(?=.*1).{5,}" title="Atenção ao padrão"/>
+
+        <h3>Exemplo validação de elemento HTML com regex</h3>
+        <label for="celement">Especifique um elemento p HTML:</label>
+        <input id="celement" type="text" name="element" pattern="<(p)(\s[^\s<>]+)*>.*</\1>"/>
+
+        <label for="celement1">Especifique um elemento qualquer HTML:</label>
+        <input id="celement1" type="text" name="element1" pattern="<([a-z]+\d?)(\s[^\s<>]+)*>.*</\1>"/>
+
+        <input id="submit" type="submit" value="submit"/>
+    </form>
+</body>
+</html>
