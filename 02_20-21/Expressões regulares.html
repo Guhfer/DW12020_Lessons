@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo expressões regulares</title>
+</head>
+<body>
+    <form action="processa" method="post">
+        <label for="cnome"> Nome:</label>
+        <input id="cnome" type="text" name="name" pattern="[a-zA-Z]{3,}(\s[a-zA-Z]+)*" required/> <!-- \.? Usando nome abreviado-->
+
+        <label for="ccode">Código da disciplina</label>
+        <input id="ccode" type="text" name="cod" pattern="[A-Z]{2}[A-Z1-2]S[1-6]" title="Siga o padrão" required/> <!-- .*(ab|bc).*-->
+
+        <input type="submit" value="Enviar" name="submit"/>
+    </form>
+
+</body>
+</html>
