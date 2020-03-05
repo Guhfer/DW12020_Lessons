@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	<head>
+		<title>Logo do IFSP responsivo</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Exemplo de troca de imagens</h1>
+		<picture>
+			<source srcset="imagens/Marca_IFSP_Retrato.jpg" media="only screen and (orientation:portrait)"/>
+			<source srcset="imagens/Marca_IFSP_Paisagem.jpg" media="only sceen and (orientation:landscape)"/>
+			<img src="imagens/Marca_IFSP_Paisagem.jpg" height="1042" width="900" alt="Logo IFSP">
+		</picture>
+	</body>
+</html>

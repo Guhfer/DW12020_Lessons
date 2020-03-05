@@ -1,0 +1,23 @@
+div {
+    box-sizing: border-box;
+    border: 2px solid gray;
+}
+
+.img {
+    float: bottom;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    .image {
+        float: left;
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .image {
+        float: right;
+        width: 50%;
+    }
+}
