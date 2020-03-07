@@ -1,0 +1,44 @@
+.container {
+    background-color: #279ebc;
+    display: flex;
+    /*flex-direction: row;*/
+    /*valor deafult row*/
+    /*flex-width: wrap;*/
+    /*Valor default nowrap*/
+    /*width: 40%;*/
+    height: 450px;
+    flex-flow: row wrap; /*shorthand - simplifica duas propriedades*/
+    justify-content: space-evenly;
+    /*Valor default flex-start - serve para posicionar elemntos entre os items com flex-box na horizontal*/
+    align-items: flex-start;
+    /*Valor default: stretch - serve para alinhar os items no elemnto definido com flex-box na vertical*/
+}
+
+.container > div {
+    background-color: ghostwhite;
+    font-size: 25px;
+    padding: 20px;
+    /*margin: 10px;*/
+    border: 1px black solid;
+
+}
+
+#b {
+    /*align-self: center;*/
+    order: 1;
+    flex: 10%;
+}
+
+#a {
+    order: 3;
+    flex: 60%;
+}
+
+#c {
+    order: 2;
+    flex: 30%;
+}
+
+* {
+    box-sizing: border-box;
+}
