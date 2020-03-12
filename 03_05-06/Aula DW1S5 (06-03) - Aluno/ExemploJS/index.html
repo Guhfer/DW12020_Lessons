@@ -6,8 +6,13 @@
 </head>
 <body>
     <form action="controller" method="get">
+        <label for="fage1">Idade 1:</label>
+        <input id="fage1" type="text" name="idade1" required/>
 
-        <input type="button" name="button" value="calculate" onclick="add()"/>
+        <label for="fage2">Idade 2:</label>
+        <input id="fage2" type="text" name="idade2" required/>
+        <input id="button" type="button" name="button" value="calculate"/>
+        <output id="output" name="resultado" for="fage1 fage2"></output>
     </form>
     <script src="example.js">
     </script>
