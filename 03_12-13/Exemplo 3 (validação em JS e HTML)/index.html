@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+	<head>
+		<title>Problema 3</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="CSS/estilos.css" />
+	</head>
+	
+	<body>
+		<section>
+			<h2>Problema 3 - Validação de dados</h2>
+			<form id="f1" action="processa.php" method="post" name="form">
+				<label for="nome">
+					Nome:
+				</label>
+				<input type="text" name="nome" id="nome" />
+				
+				<label for="sobrenome">
+					Sobrenome:
+				</label>
+				<input type="text" name="sobrenome" id="sobrenome" />
+				
+				<label for="idade">
+					Idade:
+				</label>
+				<input type="number" name="idade" id="idade" min="1" required="required" />
+				
+				<label for="email">
+					E-mail:
+				</label>
+				<input type="email" name="email" id="email" required="required" />
+				
+				<input type="submit" name="submeter" value="OK" />
+			</form>
+		</section>
+		<section id="erros"></section>
+		
+		<script src="JS/problema3.js"></script>
+	</body>
+
+</html>
