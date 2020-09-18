@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<title>Envio de arquivo</title>
+	</head>
+	<body>
+		<form method="post" action="ServletArquivo" enctype="multipart/form-data">
+			<label for="arquivo">
+				Envie seu arquivo XML:
+			</label>
+			<input type="file" name="arquivo" id="arquivo" accept=".xml" />
+			<input type="submit" name="botao" value="Importar XML" />
+		</form>
+	</body>
+</html>

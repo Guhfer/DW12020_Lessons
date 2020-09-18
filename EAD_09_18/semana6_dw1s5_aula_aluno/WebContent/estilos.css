@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+table {
+	width: 60%;
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid #000;
+}

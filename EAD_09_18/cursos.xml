@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cursos>
+	<curso>
+		<codigo>1</codigo>
+		<nome>Análise e Desenvolvimento de Sistemas</nome>
+		<inicio>2012</inicio>
+		<disciplinas>
+			<disciplina>
+				<nome>Linguagem de Programação Visual</nome>
+				<sigla>LPVS2</sigla>
+			</disciplina>
+			<disciplina>
+				<nome>Programação Orientada a Objetos</nome>
+				<sigla>POOS3</sigla>
+			</disciplina>
+			<disciplina>
+				<nome>Desenvolvimento de Sistemas</nome>
+				<sigla>DSIS4</sigla>
+			</disciplina>
+		</disciplinas>
+    </curso>
+    <curso>
+		<codigo>2</codigo>
+        <nome>Licenciatura em Matemática</nome>
+        <inicio>2011</inicio>
+		<disciplinas>
+			<disciplina>
+				<nome>Geometria Plana</nome>
+				<sigla>GEPM1</sigla>
+			</disciplina>
+			<disciplina>
+				<nome>Psicologia da Educação</nome>
+				<sigla>PSCM3</sigla>
+			</disciplina>
+		</disciplinas>
+    </curso>
+    <curso>
+		<codigo>3</codigo>
+        <nome>Engenharia Mecânica</nome>
+        <inicio>2017</inicio>
+		<disciplinas>
+			<disciplina>
+				<nome>Resistência de Materiais</nome>
+				<sigla>RDME4</sigla>
+			</disciplina>
+			<disciplina>
+				<nome>Robótica</nome>
+				<sigla>ROBE10</sigla>
+			</disciplina>
+		</disciplinas>
+    </curso>
+</cursos>
