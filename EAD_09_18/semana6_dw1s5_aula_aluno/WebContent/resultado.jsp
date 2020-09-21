@@ -13,5 +13,13 @@
 			Tabela de cursos importados do XML
 		</h1>
 		<!--Completar aqui-->
+		<c:choose>
+			<c:when test="${not empty lista.cursos}">
+			</c:when>
+
+			<c:otherwise>
+				<p>XML vazio ou o arquivo enviado não é um XML</p>
+			</c:otherwise>
+		</c:choose>
 	</body>
 </html>
